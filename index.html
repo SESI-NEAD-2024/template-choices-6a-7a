@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Como tudo começou?" />
+    <meta name="author" content="SESI" />
+    <title>Aula 01 | Desvendando o mistério de si mesmo</title>
+    <link rel="icon" type="image/png" href="src/img/core/Favicon.png" />
+
+    <!-- Fonts Gamay Editorial -->
+    <link rel="stylesheet" href="https://use.typekit.net/gfu5jar.css" />
+
+    <!--Import Google Icon Font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+    />
+
+    <!-- CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="src/css/main.css"
+      media="screen"
+    />
+
+    <!-- Vue DEV MODE -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+    <!-- Vue PROD MODE -->
+    <script
+      rel="preconnect"
+      src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
+    ></script>
+
+    <!-- Scorm JS -->
+    <!-- <script src="src/js/scorm/APIWrapper.js"></script>
+    <script src="src/js/scorm/SCOFunctions.js"></script>
+    <script src="src/js/scorm/scorm-app.js"></script> -->
+
+    <link rel="preload" href="src/img/Hero-m.webp" as="image" />
+    <link rel="preload" href="src/img/Hero-s.webp" as="image" />
+
+    <!-- Materialize JS -->
+    <script
+      type="text/javascript"
+      src="src/js/materialize/materialize.js"
+      defer
+    ></script>
+    <!-- AOS JS -->
+    <script
+      type="text/javascript"
+      src="src/js/aos-master/aos.js"
+      defer
+    ></script>
+
+    <!-- click show/hidden  -->
+    <script>
+      // function myFunction() {
+      //   var x = document.getElementById("explication-one");
+      //   if (x.style.display === "none") {
+      //     x.style.display = "block";
+      //   } else {
+      //     x.style.display = "none";
+      //   }
+      // }
+    </script>
+
+    <!-- JS Animation GSAP -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+
+    <!-- App.js JS customizado aqui -->
+    <script type="module" src="src/js/app.js"></script>
+
+    <!-- AOS Animation -->
+    <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- loading ---------------------------------- -->
+      <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <div id="content">
+        <!-- Sidebar ---------------------------------- -->
+        <!-- <sidebar></sidebar> -->
+
+        <!-- Navbar ---------------------------------- -->
+        <navbar></navbar>
+
+        <!-- Hero Banner ----------------------------------->
+        <hero>Título da aula</hero>
+
+        <!-- Primeiro Conteúdo ----------------------------->
+        <div id="aula">
+          <div class="container py-80">
+            <div class="container--medium center-align">
+              <h2 class="purple-text center-align mt-24" data-aos="zoom-in">
+                👉 Nesta aula (h2):
+              </h2>
+              <ul class="center-align" style="list-style: none; padding: 0">
+                <li><p>&bull; Item 01;</p></li>
+                <li>
+                  <p style="margin-top: -12px">&bull; Item 02;</p>
+                </li>
+                <li>
+                  <p style="margin-top: -12px">&bull; Item 03;</p>
+                </li>
+                <li>
+                  <p style="margin-top: -12px">&bull; Item XX.</p>
+                </li>
+              </ul>
+            </div>
+
+            <img-side-card
+              class="py-60"
+              src="src/img/static-01.webp"
+              alt="Choices"
+              card_class="bg-green"
+            >
+              <!-- Conteúdo textual -->
+              <div class="py-24">
+                <p class="body1 purple-text">
+                  <b>Imagem com card lateral</b>
+                </p>
+                <br />
+                <p>Nostrum exercitationem?</p>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                  eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                </p>
+                <br />
+                <p class="pt-16">
+                  Ut enim ad minim veniam, quis nostrum exercitationem ullam
+                  corporis suscipit laboriosam.
+                </p>
+              </div>
+            </img-side-card>
+
+            <!-- Cards Padrões -->
+            <div class="row">
+              <div class="col m4 s12">
+                <div class="card card--purple-shadow">
+                  <div class="card-content">
+                    <p class="card-title purple-text">
+                      Nostrum exercitationem?
+                    </p>
+                    <img
+                      class="img--round w100"
+                      src="src/img/vc-sabia-01.webp"
+                      alt="Mensagens"
+                      loading="lazy"
+                    />
+                    <p class="pt-16">
+                      Ut enim ad minim veniam, quis nostrum exercitationem ullam
+                      corporis suscipit laboriosam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m4 s12">
+                <div class="card card--purple-shadow">
+                  <div class="card-content">
+                    <p class="card-title purple-text">
+                      Nostrum exercitationem?
+                    </p>
+                    <img
+                      class="img--round w100"
+                      src="src/img/vc-sabia-01.webp"
+                      alt="Mensagens"
+                      loading="lazy"
+                    />
+                    <p class="pt-16">
+                      Ut enim ad minim veniam, quis nostrum exercitationem ullam
+                      corporis suscipit laboriosam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m4 s12">
+                <div class="card card--purple-shadow">
+                  <div class="card-content">
+                    <p class="card-title purple-text">
+                      Nostrum exercitationem?
+                    </p>
+                    <img
+                      class="img--round w100"
+                      src="src/img/vc-sabia-01.webp"
+                      alt="Mensagens"
+                      loading="lazy"
+                    />
+                    <p class="pt-16">
+                      Ut enim ad minim veniam, quis nostrum exercitationem ullam
+                      corporis suscipit laboriosam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- House ------------------------->
+        <div id="house" style="line-height: 0">
+          <div class="container pt-40">
+            <div class="row py-184 py-96-mobile">
+              <div class="col m3 s12"></div>
+              <div class="col m6 s12">
+                <h3
+                  class="green-text"
+                  style="margin-bottom: 40px"
+                  data-aos="zoom-in"
+                >
+                  House (h3) 🏠
+                </h3>
+                <p class="white-text">
+                  Formatação de texto local confome necessidade.
+                </p>
+                <p class="white-text">
+                  Muda-se justificação/alinhamento, <b>negrito</b>,
+                  <i>itálico</i>, <span class="green-text">cor</span> e
+                  conteúdo...
+                </p>
+              </div>
+              <div class="col m3 s12"></div>
+            </div>
+          </div>
+
+          <!-- divisor ----------------------------------->
+          <img
+            src="src/img/divisor-02.svg"
+            style="width: 100%; margin-bottom: -1px"
+            alt="Onda"
+          />
+        </div>
+
+        <!-- Componentes ----------------------------------->
+
+        <!-- COLLAPSIBLES ----------------------------------->
+        <div class="linha linha-2up bg-white" style="line-height: 0">
+          <div class="container pt-24">
+            <div class="container--medium py-80">
+              <div class="row">
+                <div class="col m12 s12">
+                  <h4 class="purple-text mb-12" data-aos="zoom-in">
+                    Componentes (h4)
+                  </h4>
+                  <h5 class="purple-text" data-aos="zoom-in">
+                    Collapsible (h5)
+                  </h5>
+
+                  <!-- collapsible 01 ----------------------------------->
+                  <ul class="collapsible expansable mt-24">
+                    <li>
+                      <div class="collapsible-header" tabindex="0">
+                        <p>🗣️ <b>Opção 01</b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="row py-24">
+                          <div class="col m4 s12">
+                            <img
+                              class="img--round"
+                              src="src/img/collapsible-01.webp"
+                              alt="Mensagens"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div class="col m8 s12 flex--align-center">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisci
+                              elit, sed eiusmod tempor incidunt ut labore et
+                              dolore magna aliqua.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header" tabindex="0">
+                        <p>🌎 <b>opção 02 </b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="row py-24">
+                          <div class="col m4 s12">
+                            <img
+                              class="img--round"
+                              src="src/img/collapsible-02.webp"
+                              alt="Conte"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div class="col m8 s12 flex--align-center">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisci
+                              elit, sed eiusmod tempor incidunt ut labore et
+                              dolore magna aliqua.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header" tabindex="0">
+                        <p>🎭 <b>Opção XX </b></p>
+                      </div>
+                      <div class="collapsible-body">
+                        <div class="row py-24">
+                          <div class="col m4 s12">
+                            <img
+                              class="img--round"
+                              src="src/img/collapsible-03.webp"
+                              alt="Aprendizagem"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div class="col m8 s12 flex--align-center">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisci
+                              elit, sed eiusmod tempor incidunt ut labore et
+                              dolore magna aliqua.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <!-- collapsible 02----------------------------------->
+                  <div class="row mt-60 pb-24">
+                    <div class="col m6 s12">
+                      <ul class="collapsible collapsible--mission">
+                        <li class="">
+                          <div
+                            class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                            tabindex="0"
+                            style="background-image: none"
+                          >
+                            <p class="center-align"><b>Opção 01</b></p>
+                          </div>
+                          <div
+                            class="collapsible-body bg-purple"
+                            style="
+                              transition: max-height 300ms ease-out;
+                              max-height: 0px;
+                            "
+                          >
+                            <div class="py-40">
+                              <img
+                                class="circle"
+                                src="src/img/circle_01.webp"
+                                alt="Choices"
+                                loading="lazy"
+                                style="display: block; margin: 0px auto"
+                              />
+                              <p class="pt-12">
+                                Lorem ipsum dolor sit amet, consectetur adipisci
+                                elit, sed eiusmod tempor incidunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrum exercitationem ullam corporis
+                                suscipit laboriosam.
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col m6 s12">
+                      <ul class="collapsible collapsible--mission">
+                        <li>
+                          <div
+                            class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                            tabindex="0"
+                          >
+                            <p class="center-align">
+                              <b>Opção 02</b>
+                            </p>
+                          </div>
+                          <div class="collapsible-body">
+                            <div class="py-40">
+                              <img
+                                class="circle"
+                                src="src/img/circle_01.webp"
+                                alt="Choices"
+                                loading="lazy"
+                                style="display: block; margin: 0px auto"
+                              />
+                              <p class="pt-12">
+                                Lorem ipsum dolor sit amet, consectetur adipisci
+                                elit, sed eiusmod tempor incidunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrum exercitationem ullam corporis
+                                suscipit laboriosam.
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p>
+                    A formatação de conteúdo dos Collapsible é local e sem
+                    segredo usando os recurso nativos do modelo de Choices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAROUSEL'S ----------------------------------->
+        <div class="linha linha-2dwn bg-purple">
+          <!-- divisor ----------------------------------->
+          <img
+            src="src/img/divisor-03.svg"
+            style="width: 100%; margin-top: -1px"
+            alt="Onda"
+          />
+          <div class="container py-96 pb-96">
+            <div class="container--medium">
+              <h5 class="green-text" data-aos="zoom-in">Carousel's (h5)</h5>
+              <br />&nbsp;
+            </div>
+
+            <!-- carousel 01 / classico ----------------------------------->
+            <carousel class="mb-60"></carousel>
+            <!-- carousel 02 / com texto sobre imagem ----------------------------------->
+            <carousel-txt class="mb-60"></carousel-txt>
+            <!-- carousel 03 / com rótulo ----------------------------------->
+            <carousel-label class="mb-60"></carousel-label>
+          </div>
+        </div>
+
+        <!-- MISSÕES ----------------------------------->
+        <div class="linha linha-2up bg-azul" style="line-height: 0">
+          <!-- divisor ----------------------------------->
+          <img
+            src="src/img/divisor-04.svg"
+            style="width: 100%; margin-top: -1px"
+            alt="Onda"
+          />
+          <div class="container py-96">
+            <div class="container--medium">
+              <div class="row">
+                <div class="col m12 s12">
+                  <h5 class="green-text mb-24" data-aos="zoom-in">
+                    Missões (h5)
+                  </h5>
+                  <br />&nbsp;
+                  <!-- Missoes 01 ----------------------------------->
+                  <div class="box-attention box-attention--translucid-w">
+                    <div
+                      class="mission-tag pr-24 pl-24 mt-24"
+                      style="max-width: fit-content"
+                    >
+                      <img
+                        src="src/img/mission.svg"
+                        loading="lazy"
+                        alt="ícone bandeira"
+                      />
+                      <p class="purple-text"><b>Missão 1</b></p>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                      eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                    </p>
+                    <p>
+                      <b
+                        >Ut enim ad minim veniam, quis nostrum exercitationem
+                        ullam corporis suscipit laboriosam.</b
+                      >
+                    </p>
+                  </div>
+
+                  <!-- Missoes 02 ----------------------------------->
+                  <div class="row mt-40">
+                    <div class="col m12 s12">
+                      <div
+                        class="box-attention box-attention--translucid-w py-24"
+                      >
+                        <div
+                          class="mission-tag pr-24 py-16"
+                          style="max-width: fit-content"
+                        >
+                          <img
+                            src="src/img/mission.svg"
+                            loading="lazy"
+                            alt="ícone bandeira"
+                          />
+                          <p class="purple-text"><b>Missão 2</b></p>
+                        </div>
+                      </div>
+                      <ul class="white-text mt-24">
+                        <li>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisci
+                            elit, sed eiusmod tempor incidunt ut labore et
+                            dolore magna aliqua.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Ut enim ad minim veniam, quis
+                            <b>nostrum exercitationem</b>
+                            ullam corporis suscipit laboriosam.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Missoes 03 ----------------------------------->
+                  <div class="box-attention box-attention--orange-strong mt-24">
+                    <div class="row">
+                      <div class="col m4 s12 flex--align-center">
+                        <div
+                          class="mission-tag pr-24 pl-24"
+                          style="max-width: fit-content"
+                        >
+                          <img
+                            src="src/img/mission.svg"
+                            loading="lazy"
+                            alt="ícone bandeira"
+                          />
+                          <p class="purple-text"><b>Missão 3</b></p>
+                        </div>
+                      </div>
+                      <div class="col m8 s12">
+                        <p class="white-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                          sed eiusmod tempor incidunt ut labore et dolore magna
+                          aliqua.
+                        </p>
+                        <p class="white-text">
+                          <b
+                            >Ut enim ad minim veniam, quis nostrum
+                            exercitationem ullam corporis suscipit
+                            laboriosam.</b
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Missoes 04 ----------------------------------->
+                  <div class="row pt-40">
+                    <div class="col m3 s12">
+                      <div
+                        class="mission-tag pr-24 pl-24 mt-24"
+                        style="max-width: fit-content"
+                      >
+                        <img
+                          src="src/img/mission.svg"
+                          loading="lazy"
+                          alt="ícone bandeira"
+                        />
+                        <p class="purple-text"><b>Missão 4</b></p>
+                      </div>
+                    </div>
+                    <div class="col m9 s12">
+                      <p class="white-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                        sed eiusmod tempor incidunt ut labore et dolore magna
+                        aliqua.
+                      </p>
+                      <p class="white-text">
+                        <b
+                          >Ut enim ad minim veniam, quis nostrum exercitationem
+                          ullam corporis suscipit laboriosam.</b
+                        >
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Missoes 05 ----------------------------------->
+                  <div class="row mt-60 mb-0-mobile">
+                    <div class="col m6 s12">
+                      <div class="box-attention box-attention--translucid-k">
+                        <div
+                          class="mission-tag pr-24 pl-24 mt-24"
+                          style="max-width: fit-content"
+                        >
+                          <img
+                            src="src/img/mission.svg"
+                            loading="lazy"
+                            alt="ícone bandeira"
+                          />
+                          <p class="purple-text"><b>Missão 5</b></p>
+                        </div>
+                        <p class="white-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                          sed eiusmod tempor incidunt ut labore et dolore magna
+                          aliqua.
+                        </p>
+                        <p class="green-text">
+                          👉
+                          <b
+                            >Ut enim ad minim veniam, quis nostrum
+                            exercitationem ullam corporis suscipit laboriosam.
+                            🤗</b
+                          >
+                        </p>
+                        <p class="white-text">
+                          • Lorem ipsum dolor?<br />
+                          • Ut enim ad minim?<br />
+                          • Tempor incidunt ut?<br />
+                          • nostrum exercitationem?<br />
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col m6 s12">
+                      <div class="box-attention box-attention--translucid-k">
+                        <div
+                          class="mission-tag pr-24 pl-24 mt-24"
+                          style="max-width: fit-content"
+                        >
+                          <img
+                            src="src/img/mission.svg"
+                            loading="lazy"
+                            alt="ícone bandeira"
+                          />
+                          <p class="purple-text"><b>Missão 6</b></p>
+                        </div>
+                        <p class="white-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                          sed eiusmod tempor incidunt ut labore et dolore magna
+                          aliqua.
+                        </p>
+                        <br />
+                        <p class="green-text">
+                          <b>Tempor incidunt ut.</b>
+                        </p>
+                        <br />
+                        <p class="white-text">
+                          ✍️ Ut enim ad minim veniam, quis nostrum
+                          exercitationem ullam corporis suscipit laboriosam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Missoes 06 ----------------------------------->
+            <div class="row mt-60">
+              <div class="col m4 s12">
+                <ul class="collapsible collapsible--mission">
+                  <li>
+                    <div
+                      class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                      tabindex="0"
+                    >
+                      <img
+                        class="mr-8"
+                        src="src/img/mission.svg"
+                        alt="Bandeira"
+                      />
+                      <p class="center-align"><b>Missão 7</b></p>
+                    </div>
+                    <div class="collapsible-body">
+                      <div class="py-24">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                          sed eiusmod tempor incidunt ut labore et dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrum
+                          exercitationem ullam corporis suscipit laboriosam,
+                          nisi ut aliquid ex ea commodi consequatur. Quis aute
+                          iure reprehenderit in voluptate velit esse cillum
+                          dolore eu fugiat nulla pariatur. Excepteur sint
+                          obcaecat cupiditat non proident, sunt in culpa qui
+                          officia deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col m4 s12">
+                <ul class="collapsible collapsible--mission">
+                  <li>
+                    <div
+                      class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                      tabindex="0"
+                    >
+                      <img
+                        class="mr-8"
+                        src="src/img/mission.svg"
+                        alt="Bandeira"
+                      />
+                      <p class="center-align"><b>Missão 8</b></p>
+                    </div>
+                    <div class="collapsible-body">
+                      <div class="py-24">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                          sed eiusmod tempor incidunt ut labore et dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrum
+                          exercitationem ullam corporis suscipit laboriosam,
+                          nisi ut aliquid ex ea commodi consequatur. Quis aute
+                          iure reprehenderit in voluptate velit esse cillum
+                          dolore eu fugiat nulla pariatur. Excepteur sint
+                          obcaecat cupiditat non proident, sunt in culpa qui
+                          officia deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col m4 s12">
+                <ul class="collapsible collapsible--mission">
+                  <li>
+                    <div
+                      class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                      tabindex="0"
+                    >
+                      <img
+                        class="mr-8"
+                        src="src/img/mission.svg"
+                        alt="Bandeira"
+                      />
+                      <p class="center-align"><b>Missão 9</b></p>
+                    </div>
+                    <div class="collapsible-body">
+                      <div class="py-24">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                          sed eiusmod tempor incidunt ut labore et dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrum
+                          exercitationem ullam corporis suscipit laboriosam,
+                          nisi ut aliquid ex ea commodi consequatur. Quis aute
+                          iure reprehenderit in voluptate velit esse cillum
+                          dolore eu fugiat nulla pariatur. Excepteur sint
+                          obcaecat cupiditat non proident, sunt in culpa qui
+                          officia deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- divisor ----------------------------------->
+          <img
+            src="src/img/divisor-05.svg"
+            style="width: 100%; margin-bottom: -1px"
+            alt="Onda"
+          />
+        </div>
+
+        <!-- VOCÊ SABIA ----------------------------------->
+        <div class="linha linha-1dwn bg-orange">
+          <div class="container py-144">
+            <div class="container--medium">
+              <h5 class="green-text mb-24" data-aos="zoom-in">
+                Você Sabia? (h5)
+              </h5>
+
+              <!-- Você sabia 01 / vertical ----------------------------------->
+              <div class="card-03">
+                <img
+                  src="src/img/vc-sabia-01.webp"
+                  alt="Você sabia?"
+                  loading="lazy"
+                  class="card-03--main-img"
+                />
+                <div class="card-03--content dark-gray-light-bg">
+                  <p class="body1 green-text flex--align-center">
+                    <span class="emote-box">😮</span><b>Você sabia?</b>
+                  </p>
+                  <p class="white-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrum exercitationem ullam
+                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                    consequatur. Quis aute iure reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
+                  <p class="white-text">
+                    <b
+                      >Excepteur sint obcaecat cupiditat non proident, sunt in
+                      culpa qui officia deserunt mollit anim id est laborum.</b
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <!-- Você sabia 02 / horizontal ----------------------------------->
+              <div class="card-03 card-03--horizontal pt-60">
+                <img
+                  src="src/img/static-05.webp"
+                  alt="Você sabia?"
+                  loading="lazy"
+                  class="card-03--main-img"
+                />
+                <div class="card-03--content dark-gray-light-bg">
+                  <p class="body1 green-text flex--align-center">
+                    <span class="emote-box">😮</span><b>Você sabia?</b>
+                  </p>
+                  <p class="white-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                    eiusmod tempor incidunt ut labore et dolore magna aliqua
+                    <span class="green-text">“suscipit laboriosam”</span>?
+                  </p>
+                </div>
+              </div>
+
+              <!-- Você sabia 03 / sem imagem ----------------------------------->
+              <div class="card-03 card-03 pt-60">
+                <div class="card-03--content-solo dark-gray-light-bg">
+                  <p class="body1 green-text flex--align-center">
+                    <span class="emote-box">😮</span><b>Você sabia?</b>
+                  </p>
+                  <p class="white-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                    eiusmod tempor incidunt ut labore et dolore magna aliqua
+                    “suscipit laboriosam”?
+                  </p>
+                  <p class="green-text">
+                    <a href="https://www.google.com.br/" target="_blank"
+                      ><b>Acesse aqui</b></a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIM VOCÊ SABIA ----------------------------------->
+
+        <!-- COMPOSIÇÕES TEXTO E IMAGEM ----------------------------------->
+        <div class="linha linha-2dwn bg-green">
+          <!-- divisor ----------------------------------->
+          <img
+            src="src/img/divisor-07.svg"
+            style="width: 100%; margin-bottom: -1px"
+            alt="Onda"
+          />
+          <div class="container py-80">
+            <div class="container--medium">
+              <div class="row">
+                <div class="col m12 s12">
+                  <h5
+                    class="purple-text aos-init aos-animate"
+                    data-aos="fade-up"
+                  >
+                    Composições texto e imagem (h5)
+                  </h5>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col m6 s12">
+                  <img
+                    src="src/img/static-02.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    class="mr-24 mr-0-mobile"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="col m6 s12 flex--align-center flex--justify-center">
+                  <div>
+                    <h4
+                      class="purple-text aos-init aos-animate"
+                      data-aos="fade-up"
+                    >
+                      Título (h4)
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                      eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                    </p>
+                    <p>
+                      Ut enim ad minim veniam, quis nostrum exercitationem ullam
+                      corporis suscipit laboriosam, nisi ut aliquid ex ea
+                      commodi consequatur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col m12 s12">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrum exercitationem ullam
+                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                    consequatur.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mt-24">
+                <div class="col m4 s12 flex--align-center flex--justify-center">
+                  <img
+                    src="src/img/static-02.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    class="mr-24 mr-0-mobile"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="col m8 s12">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrum exercitationem ullam
+                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                    consequatur.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrum exercitationem ullam
+                    corporis suscipit laboriosam.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mt-24">
+                <div class="col m9 s12 flex--align-center flex--justify-center">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrum exercitationem ullam
+                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                    consequatur.
+                  </p>
+                </div>
+                <div class="col m3 s12 flex--align-center flex--justify-center">
+                  <img
+                    src="src/img/static-02.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    class="mr-24 mr-0-mobile"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col m12 s12 flex--align-center">
+                  <div class="pt-80">
+                    <h5
+                      class="purple-text aos-init aos-animate"
+                      data-aos="fade-up"
+                    >
+                      Título (h5) 💖 (emoji)
+                    </h5>
+                    <br />&nbsp;
+                    <img
+                      src="src/img/static-03.webp"
+                      alt="Choices"
+                      style="width: 100%; height: auto"
+                    /><br />&nbsp;
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                      eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrum exercitationem ullam
+                      corporis suscipit laboriosam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-60">
+                <div class="col m12 s12">
+                  <h5
+                    class="purple-text aos-init aos-animate"
+                    data-aos="fade-up"
+                  >
+                    Título (h5) 👇 (emoji)
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrum exercitationem ullam
+                    corporis suscipit laboriosam.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mt-24">
+                <div class="col m9 s12 flex--align-center flex--justify-center">
+                  <div>
+                    <p
+                      class="purple-text aos-init aos-animate"
+                      data-aos="fade-up"
+                    >
+                      <b>&bull; Título item 01 ("p" com negrito)</b> ➡️(emoji)
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                      eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam.
+                    </p>
+                  </div>
+                </div>
+                <div class="col m3 s12 flex--align-center flex--justify-center">
+                  <img
+                    src="src/img/gif-01.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    class="img-circle"
+                  />
+                </div>
+              </div>
+              <div class="row mt-24">
+                <div class="col m9 s12 flex--align-center flex--justify-center">
+                  <div>
+                    <p
+                      class="purple-text aos-init aos-animate"
+                      data-aos="fade-up"
+                    >
+                      <b>&bull; Título item 02 ("p" com negrito)</b> ➡️(emoji)
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                      eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam.
+                    </p>
+                  </div>
+                </div>
+                <div class="col m3 s12 flex--align-center flex--justify-center">
+                  <img
+                    src="src/img/gif-02.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    class="img-circle"
+                  />
+                </div>
+              </div>
+
+              <div class="row mt-24">
+                <div class="col m12 s12">
+                  <h5>Título (h5)</h5>
+                </div>
+              </div>
+
+              <div class="row mt-24">
+                <div class="col m6 s12">
+                  <img
+                    class="img-circle img-circle--75 pulse flip"
+                    src="src/img/circle_01.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
+                  />
+                  <p>
+                    (Imagem com pulse e "flip") Lorem ipsum dolor sit amet,
+                    consectetur adipisci elit.
+                  </p>
+                </div>
+                <div class="col m6 s12" style="align-items: center">
+                  <img
+                    class="img-circle img-circle--75 shadow"
+                    src="src/img/circle_02.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
+                  />
+                  <p>
+                    (Imagem com "drop shadow") Lorem ipsum dolor sit amet,
+                    consectetur adipisci elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row pt-60">
+                <div class="col m6 s12">
+                  <div
+                    class="flex--align-center flex--justify-center aos-init aos-animate"
+                    data-aos="fade-up"
+                  >
+                    <img
+                      class="img-circle img-circle--50 mr-24"
+                      src="src/img/circle_02.webp"
+                      alt="Choices"
+                      loading="lazy"
+                      style="max-width: 80px; height: auto"
+                    />
+                    <h4>Título (h4)</h4>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis
+                    <b>nostrum exercitationem</b> ullam corporis suscipit
+                    laboriosam.
+                  </p>
+                </div>
+                <div class="col m6 s12">
+                  <div
+                    class="flex--align-center flex--justify-center aos-init aos-animate"
+                    data-aos="fade-up"
+                  >
+                    <img
+                      class="img-circle img-circle--50 mr-24"
+                      src="src/img/circle_01.webp"
+                      alt="Choices"
+                      loading="lazy"
+                      style="max-width: 80px; height: auto"
+                    />
+                    <h4>Título (h4)</h4>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                    eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                    <b>Ut enim ad minim veniam</b> , quis nostrum exercitationem
+                    ullam corporis suscipit laboriosam.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mt-40">
+                <div class="col m3 s12 flex--align-center flex--justify-center">
+                  <img
+                    class="img-circle img-circle--75"
+                    src="src/img/circle_02.webp"
+                    alt="Choices"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="col m9 s12 flex--align-center flex--justify-center">
+                  <div>
+                    <h4 data-aos="fade-up" class="aos-init aos-animate">
+                      Contos com animais
+                    </h4>
+                    <p>
+                      São outro desdobramento dos contos populares, mas seu
+                      diferencial é que são interpretados e protagonizados por
+                      animais que agem como se fossem humanos(as).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col m12 s12 flex--align-center">
+                  <div class="pt-40">
+                    <h3
+                      class="purple-text aos-init aos-animate"
+                      data-aos="fade-up"
+                    >
+                      Título (h3)
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                      eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrum exercitationem ullam
+                      corporis suscipit laboriosam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-12 mb-60">
+                <div class="col m12 s12">
+                  <div class="center-align mt-24-mobile">
+                    <div class="bullet-reveal">
+                      <!-- Bullet -->
+                      <a
+                        data-aos="fade-up"
+                        class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                        data-html="true"
+                        data-position="bottom"
+                        data-tooltip-id="bullet-01"
+                        style="left: 35%; top: 20%"
+                      >
+                        <div id="bullet-01" style="display: none">
+                          <p class="green-text" style="font-size: 13.5px">
+                            <b>Exemplos de consistência em personagens</b>
+                          </p>
+                          <p class="white-text" style="font-size: 13.5px">
+                            O Gato de Botas é leal ao rapaz que acompanha
+                            durante todo seu conto. Isso mantém a personagem
+                            consistente e transmite confiança.<br />
+                          </p>
+                        </div>
+                      </a>
+                      <!-- fim Bullet -->
+                      <!-- Bullet -->
+                      <a
+                        data-aos="fade-up"
+                        class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                        data-html="true"
+                        data-position="bottom"
+                        data-tooltip-id="bullet-02"
+                        style="left: 70%; top: 55%"
+                      >
+                        <div id="bullet-02" style="display: none">
+                          <p class="green-text" style="font-size: 13.5px">
+                            <b>Exemplos de consistência em personagens</b>
+                          </p>
+                          <p class="white-text" style="font-size: 13.5px">
+                            Sua esperteza e astúcia também são o modo como ele
+                            lida com os problemas. Saber como ele vai usar essas
+                            característica para lidar com os conflitos pelo
+                            caminho é o que motiva a pessoa a continuar
+                            acompanhando a história e a querer saber seu próximo
+                            passo!
+                            <br />
+                          </p>
+                        </div>
+                      </a>
+                      <!-- fim Bullet -->
+                      <img
+                        data-aos="zoom-in"
+                        class="img-rounded mission-img aos-init aos-animate"
+                        src="src/img/static-09.webp"
+                        alt="Choices"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAMANHOS, MEDIDAS E FORMAS ----------------------------------->
+        <div class="linha linha-1up bg-gray" style="line-height: 0">
+          <!-- divisor ----------------------------------->
+          <img
+            src="src/img/divisor-09.svg"
+            style="width: 100%; margin-top: -23px"
+            alt="Onda"
+          />
+          <div class="container pt-24">
+            <div class="container--medium py-80">
+              <div class="row">
+                <div class="col m12 s12">
+                  <h4
+                    class="purple-text aos-init aos-animate mb-24"
+                    data-aos="fade-up"
+                  >
+                    Tamanhos, medidas e formas (h4)
+                  </h4>
+                  <h5
+                    class="purple-text aos-init aos-animate"
+                    data-aos="fade-up"
+                  >
+                    Tipologia (h5)
+                  </h5>
+                  <ul>
+                    <li>
+                      <p
+                        class="display1"
+                        style="margin-top: 20px; margin-bottom: 20px"
+                      >
+                        DISPLAY
+                      </p>
+                    </li>
+                    <li>
+                      <h1 style="margin-top: 20px; margin-bottom: 20px">
+                        Heading 1
+                      </h1>
+                    </li>
+                    <li>
+                      <h2 style="margin-top: 20px; margin-bottom: 20px">
+                        Heading 2
+                      </h2>
+                    </li>
+                    <li>
+                      <h3 style="margin-top: 20px; margin-bottom: 20px">
+                        Heading 3
+                      </h3>
+                    </li>
+                    <li>
+                      <h4 style="margin-top: 20px; margin-bottom: 20px">
+                        Heading 4
+                      </h4>
+                    </li>
+                    <li>
+                      <h5 style="margin-top: 20px; margin-bottom: 20px">
+                        Heading 5
+                      </h5>
+                    </li>
+                    <li>
+                      <h6 style="margin-top: 20px; margin-bottom: 20px">
+                        Heading 6
+                      </h6>
+                    </li>
+                    <li>
+                      <p
+                        class="body1"
+                        style="margin-top: 20px; margin-bottom: 20px"
+                      >
+                        Body 1
+                      </p>
+                    </li>
+                    <li>
+                      <p style="margin-top: 20px; margin-bottom: 20px">
+                        Parágrafo comum
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <h5
+                class="purple-text aos-init aos-animate mb-12 mt-24"
+                data-aos="fade-up"
+              >
+                Imagens (h5)
+              </h5>
+              <div class="row">
+                <div class="col m4 s12">
+                  <p><b>Imagem</b> - <br />Cantos retos</p>
+                  <img
+                    src="src/img/static-06.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 180px"
+                  />
+                </div>
+                <div class="col m4 s12">
+                  <p>
+                    <b>Imagem</b> - <br />
+                    Cantos arredondados
+                  </p>
+                  <img
+                    class="img-rounded"
+                    src="src/img/static-07.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 180px"
+                  />
+                </div>
+                <div class="col m4 s12">
+                  <p>
+                    <b>Imagem</b> - <br />
+                    redonda/circular
+                  </p>
+                  <img
+                    class="img-circle"
+                    src="src/img/static-08.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 180px"
+                  />
+                </div>
+              </div>
+
+              <h5
+                class="purple-text aos-init aos-animate mb-12 mt-60"
+                data-aos="fade-up"
+              >
+                Efeitos (h5)
+              </h5>
+              <div class="row">
+                <div class="col m4 s12">
+                  <p><b>Imagem</b> - <br />"Drop shadow"</p>
+                  <img
+                    class="img-rounded shadow"
+                    src="src/img/static-06.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 180px"
+                  />
+                </div>
+                <div class="col m4 s12">
+                  <p><b>Imagem</b> - <br />"Pulse"</p>
+                  <img
+                    class="img-circle pulse"
+                    src="src/img/static-07.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 180px"
+                  />
+                </div>
+                <div class="col m4 s12">
+                  <p><b>Imagem</b> - <br />"Flip"</p>
+                  <img
+                    class="flip"
+                    src="src/img/static-08.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 180px"
+                  />
+                </div>
+              </div>
+
+              <h5
+                class="purple-text aos-init aos-animate mb-12 mt-60"
+                data-aos="fade-up"
+              >
+                Tamanho imagens em círculo (h5)
+              </h5>
+              <div class="row">
+                <div class="col m2 s12 center-align">
+                  <p><b>Imagem</b> - <br />"25%"</p>
+                  <img
+                    class="img-circle img-circle--25"
+                    src="src/img/static-06.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 180px"
+                  />
+                </div>
+                <div class="col m3 s12 center-align">
+                  <p><b>Imagem</b> - <br />"50%"</p>
+                  <img
+                    class="img-circle img-circle--50"
+                    src="src/img/static-07.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 180px"
+                  />
+                </div>
+                <div class="col m3 s12 center-align">
+                  <p><b>Imagem</b> - <br />"75%"</p>
+                  <img
+                    class="img-circle img-circle--75"
+                    src="src/img/static-08.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 180px"
+                  />
+                </div>
+                <div class="col m4 s12 center-align">
+                  <p><b>Imagem</b> - <br />"100%"</p>
+                  <img
+                    class="img-circle"
+                    src="src/img/static-10.webp"
+                    alt="Choices"
+                    loading="lazy"
+                    style="max-width: 180px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- divisor ----------------------------------->
+          <img
+            src="src/img/divisor-08.svg"
+            style="width: 100%; margin-bottom: -10px"
+            alt="Onda"
+          />
+        </div>
+
+        <!-- BOXES E QUESTÕES ----------------------------------->
+        <div class="linha linha-2up bg-white">
+          <div class="container pt-40">
+            <div class="container--medium py-96">
+              <div class="row">
+                <div class="col m12 s12">
+                  <h4
+                    class="purple-text aos-init aos-animate mb-24"
+                    data-aos="fade-up"
+                  >
+                    Box de Atenção e Questões (h4)
+                  </h4>
+                  <h5
+                    class="purple-text aos-init aos-animate"
+                    data-aos="fade-up"
+                  >
+                    Box de Atenção (h5)
+                  </h5>
+
+                  <div class="box-attention box-attention--translucid-w my-40">
+                    <div class="row my-12">
+                      <div
+                        class="col m3 s12 flex--align-center flex--justify-center"
+                      >
+                        <img
+                          class="img-circle"
+                          src="src/img/static-10.webp"
+                          alt="Choices"
+                          loading="lazy"
+                          style="max-width: 180px"
+                        />
+                      </div>
+                      <div class="col m9 s12">
+                        <p class="purple-text"><b>Título (p + bold)</b></p>
+                        <p>
+                          Um jeito legal de motivar as pessoas a se interessarem
+                          pelo seu conto é criar EMPATIA com quem está lendo.
+                        </p>
+                        <p>
+                          A empatia é a possibilidade de nos conectarmos com o
+                          que outra pessoa pode estar sentindo. É mais ou menos
+                          como quando nos colocamos no lugar dela e imaginamos
+                          como pode ser passar por essa situação.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row my-60">
+                    <div class="col m6 s12">
+                      <div class="box-attention box-attention--white">
+                        <p class="body1 purple-text">
+                          <b>Título (body1 + bold)</b>
+                        </p>
+                        <img
+                          class="img-circle img-circle--75"
+                          src="src/img/static-07.webp"
+                          alt="Choices"
+                          loading="lazy"
+                          style="
+                            max-width: 180px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                          "
+                        />
+                        <p>
+                          Quem aparece na história? Sobre quem estamos falando?
+                          Temos que definir quem são as PERSONAGENS que vão
+                          conduzir a narrativa.<br />&nbsp;
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col m6 s12">
+                      <div class="box-attention box-attention--white">
+                        <p class="body1 purple-text">
+                          <b>Título (body1 + bold)</b>
+                        </p>
+                        <img
+                          class="img-circle img-circle--75"
+                          src="src/img/static-08.webp"
+                          alt="Choices"
+                          loading="lazy"
+                          style="
+                            max-width: 180px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                          "
+                        />
+                        <p>
+                          O que vai acontecer na história? Os eventos que
+                          motivam ou movem as personagens durante o desenrolar
+                          de fatos é chamado de ENREDO.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Padrão -->
+                  <div class="box-attention mb-40">
+                    <p class="center-align"><b>O que você acha?</b></p>
+                  </div>
+
+                  <!-- Verde -->
+                  <div class="box-attention box-attention--green mb-40">
+                    <h3 class="purple-text center-align py-24">
+                      Para começar...
+                      <br /><br />
+                      Responde aí! O que é o sistema digestório?
+                    </h3>
+                  </div>
+                  <!-- Roxo -->
+                  <div class="box-attention box-attention--purple mb-40">
+                    <p class="body1 center-align purple-text">
+                      <b>
+                        Já estamos em nosso centro de comandos, e Luki está
+                        prestes a acessar o monitor para conhecer nossa
+                        missão</b
+                      >
+                    </p>
+                  </div>
+                  <!-- Com img -->
+                  <div
+                    class="box-attention box-attention--purple pl-0 mb-40 flex--align-center"
+                  >
+                    <img
+                      src="src/img/boy-confirm.webp"
+                      class="p-16"
+                      style="max-width: 100px; width: 100%"
+                      alt="Garoto"
+                      loading="lazy"
+                    />
+                    <p class="body1 purple-text">
+                      <b>
+                        Já estamos em nosso centro de comandos, e Luki está
+                        prestes a acessar o monitor para conhecer nossa
+                        missão</b
+                      >
+                    </p>
+                  </div>
+
+                  <div class="box-attention box-attention--purple-strong mb-40">
+                    <p class="center-align white-text">
+                      <b>
+                        Já estamos em nosso centro de comandos, e Luki está
+                        prestes a acessar o monitor para conhecer nossa
+                        missão</b
+                      >
+                    </p>
+                  </div>
+                  <!-- Azul -->
+                  <div class="box-attention box-attention--blue mb-40">
+                    <p class="body1 center-align blue-text">
+                      <b>
+                        Já estamos em nosso centro de comandos, e Luki está
+                        prestes a acessar o monitor para conhecer nossa
+                        missão</b
+                      >
+                    </p>
+                  </div>
+
+                  <p>Entre outros...</p>
+
+                  <div class="mt-60">
+                    <h5
+                      class="purple-text aos-init aos-animate"
+                      data-aos="fade-up"
+                    >
+                      Questões (h5)
+                    </h5>
+                    <h6
+                      class="purple-text aos-init aos-animate mt-24"
+                      data-aos="fade-up"
+                    >
+                      Multipla Escolha com Radio / opção única (h5)
+                    </h6>
+                    <question-radio></question-radio>
+                  </div>
+
+                  <div class="mt-60">
+                    <h6
+                      class="purple-text aos-init aos-animate mt-24"
+                      data-aos="fade-up"
+                    >
+                      Ordem dos Itens / ordenação (h5)
+                    </h6>
+                    <question-in-order></question-in-order>
+                  </div>
+
+                  <div class="mt-60">
+                    <h6
+                      class="purple-text aos-init aos-animate mt-24"
+                      data-aos="fade-up"
+                    >
+                      Checkbox em Tabela / combinação (h5)
+                    </h6>
+                    <question-matriz></question-matriz>
+                  </div>
+
+                  <div class="mt-24">
+                    <h6
+                      class="purple-text aos-init aos-animate mt-24"
+                      data-aos="fade-up"
+                    >
+                      Multipla Escolha com Checkbox / combinação opção (h5)
+                    </h6>
+                    <question-checkbox></question-checkbox>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Utilitarios ----------------------------------------->
+        <div class="container py-80">
+          <p class="m-w600 w50">
+            É, Luki! Confirmamos!É, Luki! Confirmamos!É, Luki! Confirmamos! É,
+            Luki! Confirmamos!É, Luki! Confirmamos!É, Luki! Confirmamos! É,
+            Luki! Confirmamos!É, Luki! Confirmamos!É, Luki! Confirmamos! É,
+            Luki! Confirmamos!É, Luki! Confirmamos!É, Luki! Confirmamos!
+          </p>
+          <div
+            class="box-attention box-attention--middle-blue py-16 mr-80 mt-60 mt-0-mobile mr-0-mobile"
+          >
+            <p>
+              É, Luki! Confirmamos! <br /><span class="purple-text"
+                ><b>O Sol é o centro do Universo</b></span
+              >. 🫰
+            </p>
+          </div>
+        </div>
+
+        <!-- ESTORINHAS / DIÁLOGOS ------------------------------------>
+        <!-- Parte 01 ------------------------->
+        <div class="game-story game-story--scene03">
+          <!-- Container principal da cena 03 do jogo -->
+          <div id="game-content-02" class="container game-content">
+            <!-- Linha 01: Interação entre os personagens Diana e Luki -->
+            <div class="row pt-288 pt-80-mobile">
+              <!-- Coluna com a imagem da personagem Diana -->
+              <div class="col m3 s3">
+                <img
+                  class="character-flip-v-h"
+                  src="src/img/girl-posing3.webp"
+                  alt="Diana"
+                  loading="lazy"
+                  style="max-width: 220px !important"
+                />
+              </div>
+
+              <!-- Coluna central com os diálogos -->
+              <div class="col m6 s6">
+                <!-- Primeiro balão de fala, destacando uma mensagem -->
+                <div
+                  class="box-attention box-attention--green box-attention--bl py-16 mr-80 mt-60 mt-0-mobile mr-0-mobile"
+                >
+                  <p>
+                    É, Luki! Confirmamos! <br />
+                    <span class="purple-text"
+                      ><b>O Sol é o centro do Universo</b></span
+                    >. 🫰
+                  </p>
+                </div>
+
+                <!-- Segundo balão de fala, adicionando um comentário -->
+                <div
+                  class="box-attention box-attention--orange-strong box-attention--tr py-16 ml-80 mt-40 mt-20-mobile ml-0-mobile"
+                  style="margin-left: 20%"
+                >
+                  <p>Quantas leis e teorias para chegar a essa conclusão!</p>
+                </div>
+              </div>
+
+              <!-- Coluna com a imagem do personagem Luki -->
+              <div class="col m3 s3">
+                <img
+                  class="character"
+                  src="src/img/boy-confirm.webp"
+                  alt="Luki"
+                  loading="lazy"
+                  style="max-width: 220px !important"
+                />
+              </div>
+            </div>
+            <!-- Fim da Linha 01 -->
+
+            <!-- Linha 02: Nova interação, introduzindo o Doutor -->
+            <div class="row mt-80">
+              <!-- Espaçamento na lateral -->
+              <div class="col m2 s2"></div>
+
+              <!-- Coluna central com o diálogo do Doutor -->
+              <div class="col m6 s6">
+                <!-- Balão de fala do Doutor, com um tom de dúvida -->
+                <div
+                  class="box-attention box-attention--purple-strong box-attention--br py-16 mr-80 mt-60 mt-0-mobile mr-0-mobile"
+                >
+                  <p>
+                    Vocês têm certeza? 😆 <br />
+                    <b>O sol é mesmo o centro do Universo?</b><br />
+                    Acho que esse é o tema da nossa Missão!
+                  </p>
+                </div>
+              </div>
+
+              <!-- Coluna com a imagem do Doutor -->
+              <div class="col m3 s3">
+                <img
+                  class="character"
+                  src="src/img/doctor-happy.webp"
+                  alt="Doutor"
+                  loading="lazy"
+                  style="max-width: 180px !important"
+                />
+              </div>
+
+              <!-- Espaçamento na lateral -->
+              <div class="col m1 s1"></div>
+            </div>
+            <!-- Fim da Linha 02 -->
+          </div>
+
+          <!-- Imagem decorativa para separar a seção -->
+          <img
+            src="src/img/Section.svg"
+            style="width: 100%; margin-bottom: -4px"
+            alt="Onda"
+          />
+        </div>
+
+        <!-- Fim Parte 01 ------------------------->
+
+        <!-- Parte 02 ------------------------->
+        <div class="game-story game-story--scene02" style="line-height: 0">
+          <img
+            src="src/img/Sectioni.svg"
+            style="width: 100%; margin-top: -4px"
+            alt="Onda"
+          />
+          <div id="game-content-01" class="container game-content pt-40">
+            <!-- linha 01 -->
+            <div id="missao" class="row">
+              <div class="col m1 s1"></div>
+              <div class="col m10 s10 center-align">
+                <p class="white-text" style="text-align: center">
+                  Já estamos em nosso centro de comandos, e Luki está prestes
+                  <br />a acessar o monitor para conhecer nossa missão.
+                </p>
+                <div
+                  class="box-attention box-attention--green py-8 my-24 mr-240 mr-0-mobile ml-240 ml-0-mobile mt-0-mobile"
+                >
+                  <p style="text-align: center">
+                    <b>Prontos para nossa próxima missão?</b> 🚀
+                  </p>
+                </div>
+                <p class="white-text" style="text-align: center">
+                  <b
+                    >Vamos observar o que Luki recebeu em sua central de
+                    controle!</b
+                  >
+                </p>
+                <br />
+              </div>
+              <div class="col m1 s1"></div>
+            </div>
+            <!-- fim linha 01 -->
+
+            <!-- apenas luki -->
+            <div class="row mt-24 mt-24-mobile">
+              <div class="col m5 s5"></div>
+              <div class="col m3 s3">
+                <img
+                  class="character"
+                  src="src/img/boy-flying.webp"
+                  alt="Luki"
+                  loading="lazy"
+                  style="max-width: 220px !important"
+                />
+              </div>
+              <div class="col m4 s4"></div>
+            </div>
+            <!-- fim apenas luki -->
+
+            <!-- linha 02 -->
+            <div class="row mt-60">
+              <div class="col m2 s2"></div>
+              <div class="col m3 s3">
+                <img
+                  class="character"
+                  src="src/img/doctor-hunter.webp"
+                  alt="Doutor"
+                  loading="lazy"
+                  style="max-width: 340px !important"
+                />
+              </div>
+              <div class="col m6 s6">
+                <div
+                  class="box-attention box-attention--purple-strong box-attention--bl py-16 mr-80 mt-60 mt-0-mobile mr-0-mobile"
+                >
+                  <p>
+                    As leis de Kepler e a Lei da Gravitação Universal permitiram
+                    que se confirmasse o Heliocentrismo. Mas, atenção! Apesar de
+                    esse termo significar “Sol no centro”, isso não significa
+                    que o Sol está no centro do Universo.
+                  </p>
+                </div>
+                <div class="content-reveal cr-02">
+                  <div
+                    @click="pulseReview('cr-02')"
+                    class="box-attention clicker mt-40 mt-20-mobile flex--align-center flex--justify-center"
+                    style="max-width: 400px; padding: 8px"
+                  >
+                    <img
+                      src="src/img/doutor-face.webp"
+                      alt="Doutor"
+                      loading="lazy"
+                      class="img-circle img-circle--25 pulse mr-8"
+                    />
+                    <p class="purple-text" style="font-size: 12px">
+                      <b>Explicação do Dr. Mathias sobre Heliocentrismo</b>
+                    </p>
+                  </div>
+                  <div class="cr-02 scale-transition scale-out">
+                    <div
+                      class="box-attention mt-24 flex--align-center flex--justify-center"
+                    >
+                      <p class="purple-text">
+                        O <b>heliocentrismo</b> é um modelo cosmológico que
+                        coloca o Sol no centro do sistema solar, com os
+                        planetas, incluindo a Terra, orbitando ao seu redor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col m1 s1"></div>
+            </div>
+            <!-- fim da linha 02 -->
+
+            <!-- linha 03 -->
+            <div class="row mt-80 mt-40-mobile">
+              <div class="col m2 s2"></div>
+              <div class="col m6 s6">
+                <div
+                  class="box-attention box-attention--green box-attention--br py-16 mt-60 mt-0-mobile ml-144 ml-0-mobile"
+                >
+                  <p>Mas, então, o que isso significa?</p>
+                </div>
+              </div>
+              <div class="col m3 s3">
+                <img
+                  class="character"
+                  src="src/img/girl-running02.webp"
+                  alt="Diana"
+                  loading="lazy"
+                  style="max-width: 220px !important"
+                />
+              </div>
+              <div class="col m1 s1"></div>
+            </div>
+            <!-- fim linha 03 -->
+
+            <!-- linha 04 -->
+            <div class="row mt-80">
+              <div class="col m1 s1"></div>
+              <div class="col m3 s3">
+                <img
+                  class="character-flip-v-h"
+                  src="src/img/doctor-happy.webp"
+                  alt="Doutor"
+                  loading="lazy"
+                  style="max-width: 180px !important"
+                />
+              </div>
+              <div class="col m7 s7">
+                <div
+                  class="box-attention box-attention--purple-strong box-attention--bl py-16 mr-80 mr-0-mobile"
+                >
+                  <p>
+                    O <span class="green-text"><b>geocentrismo</b></span
+                    >, que prevaleceu por muitos séculos, dizia que todos os
+                    corpos celestes orbitam ao redor da Terra, que é o centro do
+                    universo. Porém, Nicolau Copérnico propôs o heliocentrismo
+                    no século XVI e outros cientistas, como Galileu Galilei e
+                    Johannes Kepler, o desenvolveram. Isso transformou a
+                    compreensão da física e da astronomia.
+                  </p>
+                </div>
+                <div
+                  class="box-attention box-attention--purple-strong box-attention--tl py-16 mr-80 mt-24 mr-0-mobile"
+                >
+                  <p>
+                    O <span class="green-text"><b>Heliocentrismo</b></span> se
+                    fortaleceu através das ideias de Nicolau Copérnico, que
+                    propôs um modelo no século XVI colocando o Sol no centro do
+                    sistema solar. Embora inicialmente não tenha sido amplamente
+                    aceito, seu modelo oferecia explicações mais simples para os
+                    movimentos planetários.
+                  </p>
+                </div>
+              </div>
+              <div class="col m1 s1"></div>
+            </div>
+            <!-- fim da linha 04 -->
+
+            <!-- linha 05 -->
+            <div id="galileu" class="row mt-80 mt-60-mobile">
+              <div class="col m9 s12">
+                <div
+                  class="box-attention box-attention box-attention--bl py-12 mt-0-mobile"
+                >
+                  <div class="row">
+                    <div
+                      class="col m4 s12 flex--justify-center flex--align-center"
+                    >
+                      <img
+                        src="src/img/galileu.png"
+                        alt="Galileu"
+                        loading="lazy"
+                        class="img--round"
+                      />
+                    </div>
+                    <div
+                      class="col m8 s12 flex--justify-center flex--align-center"
+                    >
+                      <p>
+                        <b>Galileu Galilei</b>, astrônomo e físico italiano do
+                        século XVI e XVII, revolucionou a astronomia. Com
+                        telescópios melhorados, fez descobertas como as fases de
+                        Vênus e luas de Júpiter, desafiando o geocentrismo.
+                        Apoiou o heliocentrismo de Copérnico, enfrentando a
+                        oposição da Igreja. É considerado o "pai da ciência
+                        experimental" pelo método rigoroso em suas pesquisas.
+                        Contribuiu com estudos sobre o movimento e a inércia,
+                        deixando um legado marcante na história da ciência.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fim linha 05 -->
+
+            <!-- linha 06 -->
+            <div class="row mt-40 mt-60-mobile">
+              <div class="col m3 s3">
+                <img
+                  class="character"
+                  src="src/img/robo-running2.webp"
+                  alt="Cosmobit"
+                  loading="lazy"
+                  style="max-width: 220px !important"
+                />
+              </div>
+              <div class="col m9 s9">
+                <div
+                  class="box-attention box-attention box-attention--tl py-12 mt-0-mobile"
+                >
+                  <div class="row">
+                    <div
+                      class="col m4 s12 flex--justify-center flex--align-center"
+                    >
+                      <img
+                        src="src/img/copernico.png"
+                        alt="Copérnico"
+                        loading="lazy"
+                        class="img--round"
+                      />
+                    </div>
+                    <div
+                      class="col m8 s12 flex--justify-center flex--align-center"
+                    >
+                      <p>
+                        <b>Nicolau Copérnico</b>, astrônomo do século XVI,
+                        propôs o heliocentrismo, colocando o Sol no centro do
+                        sistema solar, desafiando o geocentrismo aceito. Sua
+                        teoria revolucionária argumentava que os planetas,
+                        incluindo a Terra, orbitavam ao redor do Sol. A obra "De
+                        RevolutionibusOrbium Coelestium" apresentou essa ideia,
+                        influenciando a visão do universo e o desenvolvimento da
+                        astronomia.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fim linha 06 -->
+
+            <!-- linha 07 -->
+            <div class="row pt-80 mt-20-mobile">
+              <div class="col m3 s3">
+                <img
+                  class="character-flip-v-h"
+                  src="src/img/girl-running02.webp"
+                  alt="Diana"
+                  loading="lazy"
+                  style="max-width: 220px !important"
+                />
+              </div>
+              <div class="col m6 s9">
+                <div
+                  class="box-attention box-attention--green box-attention--bl py-16 mt-60 mt-0-mobile"
+                >
+                  <p>Como o nosso Sistema Solar é lindo! 💞</p>
+                  <p>
+                    Entendi, professor! O Sol não é o centro do Universo, e sim
+                    <span class="purple-text"
+                      ><b>o centro do nosso sistema planetário!</b></span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="col m2 s12"></div>
+            </div>
+            <!-- fim linha 07 -->
+
+            <!-- linha 08 -->
+            <div class="row mt-24-mobile">
+              <div class="col m2 s12"></div>
+              <div class="col m6 s9">
+                <div
+                  class="box-attention box-attention--purple-strong box-attention--br py-16 mt-80 mt-0-mobile"
+                >
+                  <p>Isso mesmo, Diana! Vocês cumpriram a missão!</p>
+                </div>
+              </div>
+              <div class="col m3 s3 mb-24">
+                <img
+                  class="character-flip-v-h"
+                  src="src/img/doctor-dancing.webp"
+                  alt="Doutor"
+                  loading="lazy"
+                  style="max-width: 240px !important"
+                />
+              </div>
+            </div>
+            <!-- fim linha 08 -->
+
+            <!-- Relatório -->
+            <div class="container game-content">
+              <div class="row py-60">
+                <div class="col m12 s12 center-align">
+                  <h3 class="mb-40 green-text center-align" data-aos="zoom-in">
+                    Relatório da Missão
+                  </h3>
+                  <p class="white-text center-align">
+                    <b>Hoje, nós:</b>
+                  </p>
+
+                  <p class="white-text">
+                    👉 Compreendemos o que significa o heliocentrismo;<br />
+                    👉 Entendemos que o Sol é o centro do nosso sistema
+                    planetário;<br />
+                    👉 Conhecemos os planetas do nosso Sistema Solar.<br />
+                  </p>
+                </div>
+              </div>
+              <div class="row pb-80">
+                <div class="col m12 s12 center-align">
+                  <img
+                    class="character"
+                    src="src/img/boy-ok.webp"
+                    alt="Luki"
+                    loading="lazy"
+                    style="max-width: 200px !important"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Fim Relatório -->
+          </div>
+          <img
+            src="src/img/divisor-10.svg"
+            style="width: 100%; margin-bottom: -20px"
+            alt="Onda"
+          />
+        </div>
+
+        <!-- FIM ESTORINHAS -------------------------------------->
+
+        <!-- Proxima Aula ---------------------------------->
+        <div class="game-ending" style="margin-bottom: -25px">
+          <div
+            class="container--medium center-align flex--align-center flex--column py-80"
+          >
+            <div style="max-width: 620px">
+              <h3 class="mb-40 green-text center-align" data-aos="zoom-in">
+                Título Encerramento (h3)...
+              </h3>
+              <p class="white-text">
+                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrum exercitationem ullam corporis
+                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+              </p>
+            </div>
+
+            <!-- Concluir ---------------------------------->
+            <concluir></concluir>
+          </div>
+        </div>
+
+        <!-- Footer ---------------------------------- -->
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </body>
+</html>
