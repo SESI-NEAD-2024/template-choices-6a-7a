@@ -39,15 +39,12 @@
           flex-direction: column;
         }
       }
-      .img--round {
-        // border-radius: 0;
-        object-fit: cover;
-        width: 100%;
-        @include mobile {
-
-          max-height: 200px;
-        }
-      }
+     .carousel-img{
+      width: 100%;
+      max-height: calc(var(--carousel-item-height) - 100px);
+      object-fit: cover;
+      object-position: center center;
+     }
     }
     .previous,
     .next {

@@ -154,8 +154,8 @@ export default {
       <!-- item -->
       <div v-for="item in items" :key="item.id" class="carousel-item card">
         <div class="row card-content">
-        <div class="col s12 m6 img--round">
-          <img :src="item.img" :alt="item.alt" class="img--round">
+        <div class="col s12 m6">
+          <img :src="item.img" :alt="item.alt" class="img-rounded carousel-img">
           </div>
           <div class="col s12 m6 left-align" v-html="item.html"></div>
         </div>

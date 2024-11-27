@@ -9,7 +9,7 @@ export default {
      `
     <div class="img-side-card">
       <img
-        class="img--round img--purple-shadow"
+        class="img-rounded img--purple-shadow"
         :src="src"
         :alt="alt"
         loading="lazy"

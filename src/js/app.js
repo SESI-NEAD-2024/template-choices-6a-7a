@@ -35,20 +35,6 @@ const app = createApp({
   },
 
   // Quando o componente estiver montado, executa o código
-  /**
-   * Inicializa a funcionalidade de scrollspy e adiciona um ouvinte de evento de scroll.
-   *
-   * Esta função é chamada quando o componente é montado. Ela seleciona todos os elementos
-   * com a classe "scrollspy" usando `document.querySelectorAll` e inicializa o scrollspy
-   * usando `M.ScrollSpy.init`. A função `M.ScrollSpy.init` recebe dois parâmetros: os elementos
-   * a serem inicializados e um objeto de opções opcional.
-   *
-   * Após inicializar o scrollspy, a função adiciona um ouvinte de evento de scroll à janela
-   * usando `window.addEventListener`. O ouvinte de evento chama o método `handleScroll`
-   * do componente atual.
-   *
-   * @return {void} Esta função não retorna um valor.
-   */
   mounted() {
     /**
      * Oculta o elemento com id "loading" e exibe o elemento com id "content"
@@ -90,11 +76,6 @@ const app = createApp({
       AOS.refresh(); // Força a recalculação das animações após o carregamento da página
     });
 
-    // Collapsible
-    var elemsC = document.querySelectorAll(".collapsible");
-    var Collapsible = M.Collapsible.init(elemsC, {
-      // specify options here
-    });
 
 
 

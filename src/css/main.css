@@ -16783,16 +16783,6 @@ nav .progress {
   display: flex;
   align-items: center;
 }
-.img-side-card .img--round {
-  width: 45%;
-  height: 400px;
-  max-height: 400px;
-  min-height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  z-index: 3;
-  position: relative;
-}
 .img-side-card .card {
   z-index: 2;
   position: relative;
@@ -16808,10 +16798,6 @@ nav .progress {
   .img-side-card {
     flex-direction: column;
   }
-  .img-side-card .img--round {
-    width: 85%;
-    margin-bottom: 24px;
-  }
   .img-side-card .card {
     width: 100%;
     border-radius: 23px;
@@ -16820,10 +16806,6 @@ nav .progress {
 @media only screen and (max-width : 600.99px) {
   .img-side-card {
     flex-direction: column;
-  }
-  .img-side-card .img--round {
-    width: 100%;
-    margin-bottom: 24px;
   }
   .img-side-card .card {
     width: 100%;
@@ -17082,14 +17064,11 @@ nav .progress {
     flex-direction: column;
   }
 }
-.carousel-01 .carousel-item .img--round, .carousel-03 .carousel-item .img--round, .carousel-02 .carousel-item .img--round {
-  object-fit: cover;
+.carousel-01 .carousel-item .carousel-img, .carousel-03 .carousel-item .carousel-img, .carousel-02 .carousel-item .carousel-img {
   width: 100%;
-}
-@media only screen and (max-width : 600.99px) {
-  .carousel-01 .carousel-item .img--round, .carousel-03 .carousel-item .img--round, .carousel-02 .carousel-item .img--round {
-    max-height: 200px;
-  }
+  max-height: calc(var(--carousel-item-height) - 100px);
+  object-fit: cover;
+  object-position: center center;
 }
 .carousel-01 .previous, .carousel-03 .previous, .carousel-02 .previous,
 .carousel-01 .next,

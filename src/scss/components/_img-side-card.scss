@@ -3,16 +3,7 @@
   display: flex;
   align-items: center;
 
-  .img--round {
-    width: 45%;
-    height: 400px;
-    max-height: 400px;
-    min-height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    z-index: 3;
-    position: relative;
-  }
+
   .card {
     z-index: 2;
     position: relative;
@@ -28,10 +19,7 @@
   }
   @include tablet {
     flex-direction: column;
-    .img--round {
-      width: 85%;
-      margin-bottom: 24px;
-    }
+   
     .card {
       width: 100%;
       border-radius: $border-radius-lg;
@@ -39,10 +27,7 @@
   }
   @include mobile {
     flex-direction: column;
-    .img--round {
-      width: 100%;
-      margin-bottom: 24px;
-    }
+   
     .card {
       width: 100%;
       border-radius: $border-radius-lg;
