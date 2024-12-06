@@ -17740,6 +17740,10 @@ footer .container {
   background-image: linear-gradient(to right, #5758e3 10%, #ff624a 90%);
 }
 
+.dark-gray-light-bg {
+  background-image: linear-gradient(to right, #3d4d58 0, #6c7981 100%);
+}
+
 .bg-azul {
   background-color: #6fb8ef;
 }
@@ -17841,7 +17845,6 @@ footer .container {
   object-fit: contain;
   object-position: center center;
   box-shadow: 0 0 0 0 rgb(0, 0, 0);
-  transform: scale(1);
   animation: pulse 1s infinite;
 }
 

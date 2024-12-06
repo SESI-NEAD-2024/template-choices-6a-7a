@@ -57,13 +57,8 @@
   background-clip: text;
   display: inline-flex;
 }
-// {
 
-  
-//   --gradient-orange-purple2: linear-gradient(to left, #ff624a 0, #5758e3 74%);
-//   --gradient-orange-green: linear-gradient(to right, #dfff5a 0, #ff624a 100%);
-//   --gradient-dark-gray-light: linear-gradient(to right, #3d4d58 0, #6C7981 100%);
-// }
+
 // Gradiente Fundo ------------------------------------
 
 .purple-blue-bg {
@@ -77,6 +72,9 @@
 }
 .purple-orange-bg {
   background-image: linear-gradient(to right, #5758e3 10%, #ff624a 90%);
+}
+.dark-gray-light-bg {
+  background-image: linear-gradient(to right, #3d4d58 0, #6c7981 100%);
 }
 
 // Cor Fundo ------------------------------------
@@ -190,7 +188,6 @@
   object-fit: contain;
   object-position: center center;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  transform: scale(1);
   animation: pulse 1s infinite;
 }
 @keyframes pulse {
