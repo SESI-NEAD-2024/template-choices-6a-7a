@@ -72,18 +72,23 @@ const app = createApp({
     AOS.init({
       delay: 50,
     });
-    window.addEventListener('load', function() {
+    window.addEventListener("load", function () {
       AOS.refresh(); // Força a recalculação das animações após o carregamento da página
     });
 
+    // Tabs -------------------------------------
+    let tab1 = document.querySelector("#tabs-swipe-demo");
+    var tab1Instance = M.Tabs.init(tab1, {
+      swipeable: false,
+    });
 
-
-
+    // Select -------------------------------------
+    var selects = document.querySelectorAll("select");
+    var selectsInstances = M.FormSelect.init(selects, {
+      // specify options here
+    });
   },
   methods: {
-
-
-
     // Revelar conteúdo
     pulseReview(number) {
       let element = document
