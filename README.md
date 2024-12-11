@@ -1,4 +1,4 @@
-![versão](https://img.shields.io/static/v1?label=versão&message=v3v&color=%23f44336)
+![versão](https://img.shields.io/static/v1?label=versão&message=v4v&color=%23f44336)
 
 # Projeto de aula SCORM
 Use os arquivos para desenvolvimento e no final gere a build para fazer upload no LMS.
@@ -44,6 +44,14 @@ gulp
         <img style="border-radius:50%" src="docs/kelvin.jpg" width="70px;" alt="Kelvin Costa"/><br>
         <sub>
           <b>Kelvin Costa</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/pedropeixotobr" title="Pedro Peixoto Github">
+        <img style="border-radius:50%" src="docs/pedro.jpg" width="70px;" alt="Pedro Peixoto"/><br>
+        <sub>
+          <b>Pedro Peixoto</b>
         </sub>
       </a>
     </td>
