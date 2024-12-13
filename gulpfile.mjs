@@ -12,6 +12,7 @@ import gulpSass from "gulp-sass";
 const sassCompiler = gulpSass(sass);
 import purgecss from "gulp-purgecss";
 import cleanCSS from "gulp-clean-css";
+import watch from "gulp-watch";
 
 import babel from "gulp-babel";
 import uglify from "gulp-uglify";
@@ -122,7 +123,17 @@ gulp.task("buildImg", () => {
 });
 
 
+// Tarefa para compilar Sass em CSS
+gulp.task('sass', function() {
+  return gulp.src('src/scss/main.scss') // Substitua 'src/scss' pelo caminho dos seus arquivos Sass
+      .pipe(sassCompiler())
+      .pipe(gulp.dest('src/css'));
+});
 
+// Tarefa para monitorar mudanças nos arquivos Sass
+gulp.task('watch', function() {
+  gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
+});
 
 /**
  * Copia o arquivo 'aos.css' para o diretório 'dist/scorm_open/src/css'.
@@ -130,7 +141,7 @@ gulp.task("buildImg", () => {
  * @return {Promise<void>} Uma promessa que é resolvida quando o arquivo 'aos.css' é copiado para o diretório 'dist/src/css'.
  */
 gulp.task("copyCss", () => {
-  return src(["src/css/aos.css"])
+  return src("src/css/aos.css")
   .pipe(dest("dist/scorm_open/src/css"));
 });
 

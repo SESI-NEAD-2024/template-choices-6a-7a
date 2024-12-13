@@ -3,28 +3,23 @@
 
   background-position: center 50%;
   background-size: cover;
-  height: 60vh;
-  min-height: 400px;
+  aspect-ratio: 1920 / 750;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-image: linear-gradient(rgba(209, 54, 49, 0), rgba(87, 87, 227, 0.9)),
+      url("../img/Hero.webp");
   @include mobile {
     // background-image: url("../img/Hero-s.webp");
     background-image: linear-gradient(rgba(209, 54, 49, 0), rgba(87, 87, 227, 0.9)),
-      url("../img/Hero-s.webp");
+      url("../img/Hero-m.webp");
+    min-height: 400px;
+    aspect-ratio: unset;
   }
   @include tablet {
-    height: 80vh;
+    min-height: 500px;
+    aspect-ratio: unset;
+  }
 
-  }
-  @include tablet-only {
-    color: red;
-    background-image: linear-gradient(rgba(209, 54, 49, 0), rgba(87, 87, 227, 0.9)),
-      url("../img/Hero-m.webp");
-  }
-  @include desktop {
-    // background-image: url("../img/Hero.webp");
-    background-image: linear-gradient(rgba(209, 54, 49, 0), rgba(87, 87, 227, 0.9)),
-      url("../img/Hero.webp");
-  }
 }

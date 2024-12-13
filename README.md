@@ -34,6 +34,11 @@ Na raíz do projeto:
 gulp
 ```
 
+## Compilar Sass no desenvolvimento
+
+```
+gulp watch
+```
 
 ## 🤝 Qualquer dúvida, entre em contato:
 
