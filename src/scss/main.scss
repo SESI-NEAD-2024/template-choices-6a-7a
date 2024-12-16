@@ -65,8 +65,8 @@ u {
     padding-top: 3px;
   }
   border-radius: 9px;
-  background-color: var(--quaternary-color) !important;
-  color: var(--md-sys-color-on-primary);
+  background-color: $bgColor;
+  color: $fontColor;
 }
 
 .btn.filled,
@@ -80,6 +80,11 @@ u {
 .filled.btn-large:hover {
   color: var(--md-ref-palette-primary50);
   filter: brightness(0.95);
+}
+
+#finishButton{
+  background-color: $bgColor;
+  color: $fontColor;
 }
 
 //.btn.filled:hover, .filled.btn-small:hover, .filled.btn-large:hover
