@@ -20,22 +20,35 @@
       color: var(--md-sys-color-primary);
     }
 
-    
+  }
 
-    &--dark * {
-      color: #fff;
+  &--dark * {
+    color: #fff;
+    border-color: #fff;
+    [type="radio"]:not(:checked) + span:before,
+    [type="radio"]:not(:checked) + span:after {
       border-color: #fff;
-      [type="radio"]:not(:checked) + span:before,
-      [type="radio"]:not(:checked) + span:after {
-        border-color: #fff;
-      }
-      [type="radio"]:checked + span {
-        color: var(--quaternary-color);
-      }
-      [type="radio"]:checked + span:before,
-      [type="radio"]:checked + span:after {
-        background-color: var(--quaternary-color);
-      }
+    }
+    [type="radio"]:checked + span {
+      color: var(--quaternary-color);
+    }
+    [type="radio"]:checked + span:before,
+    [type="radio"]:checked + span:after {
+      border-right: 2px solid var(--quaternary-color);
+    border-bottom: 2px solid var(--quaternary-color);
+    }
+
+    [type="checkbox"]:not(:checked) + span:before,
+    [type="checkbox"]:not(:checked) + span:after {
+      border-color: #fff;
+    }
+    [type="checkbox"]:checked + span {
+      color: var(--quaternary-color);
+    }
+    [type="checkbox"]:checked + span:before,
+    [type="checkbox"]:checked + span:after {
+      border-right: 2px solid var(--quaternary-color);
+    border-bottom: 2px solid var(--quaternary-color);
     }
   }
 }
