@@ -16481,31 +16481,23 @@ nav .progress {
   background-color: var(--md-sys-color-surface);
   background-position: center 50%;
   background-size: cover;
-  height: 60vh;
-  min-height: 400px;
+  aspect-ratio: 1920/750;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(rgba(209, 54, 49, 0), rgba(87, 87, 227, 0.9)), url("../img/Hero.webp");
 }
 @media only screen and (max-width : 600.99px) {
   #hero {
-    background-image: linear-gradient(rgba(209, 54, 49, 0), rgba(87, 87, 227, 0.9)), url("../img/Hero-s.webp");
+    background-image: linear-gradient(rgba(209, 54, 49, 0), rgba(87, 87, 227, 0.9)), url("../img/Hero-m.webp");
+    min-height: 400px;
+    aspect-ratio: unset;
   }
 }
 @media only screen and (max-width : 992.99px) {
   #hero {
-    height: 80vh;
-  }
-}
-@media only screen and (min-width : 601px) and (max-width : 992.99px) {
-  #hero {
-    color: red;
-    background-image: linear-gradient(rgba(209, 54, 49, 0), rgba(87, 87, 227, 0.9)), url("../img/Hero-m.webp");
-  }
-}
-@media only screen and (min-width : 993px) {
-  #hero {
-    background-image: linear-gradient(rgba(209, 54, 49, 0), rgba(87, 87, 227, 0.9)), url("../img/Hero.webp");
+    min-height: 500px;
+    aspect-ratio: unset;
   }
 }
 
@@ -16708,8 +16700,8 @@ nav .progress {
 }
 
 .bubbly-button {
-  color: var(--md-sys-color-primary);
-  background-color: var(--quaternary-color);
+  color: #ffffff;
+  background-color: #5758e3;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
 }
 .bubbly-button span {
@@ -16732,18 +16724,18 @@ nav .progress {
 .bubbly-button:before {
   display: none;
   top: -75%;
-  background-image: radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--quaternary-color) 20%, transparent 30%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--quaternary-color) 15%, transparent 20%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%);
+  background-image: radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, transparent 20%, #5758e3 20%, transparent 30%), radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, transparent 10%, #5758e3 15%, transparent 20%), radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, #5758e3 20%, transparent 20%);
   background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
 .bubbly-button:after {
   display: none;
   bottom: -75%;
-  background-image: radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--quaternary-color) 15%, transparent 20%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%), radial-gradient(circle, var(--quaternary-color) 20%, transparent 20%);
+  background-image: radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, transparent 10%, #5758e3 15%, transparent 20%), radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, #5758e3 20%, transparent 20%), radial-gradient(circle, #5758e3 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
 .bubbly-button:active {
   transform: scale(0.9);
-  background-color: #59ff41;
+  background-color: rgb(65.1428571429, 66.2729591837, 223.3571428571);
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
 }
 .bubbly-button.animate:before {
@@ -16991,21 +16983,21 @@ nav .progress {
 }
 .box-attention--orange {
   color: var(--tertiary-color);
-  background-color: #ffe7e3;
+  background-color: rgb(255, 230.7127071823, 227);
 }
 .box-attention--orange-strong {
   color: var(--quaternary-color);
   background-color: var(--tertiary-color);
 }
 .box-attention--purple {
-  background-color: #dadaf9;
+  background-color: rgb(218.1428571429, 218.362244898, 248.8571428571);
 }
 .box-attention--purple-strong {
   background-color: var(--primary-color);
   color: #fff;
 }
 .box-attention--blue {
-  background-color: #f9fcfe;
+  background-color: rgb(248.7, 251.89375, 254.3);
 }
 .box-attention--blue-strong {
   background-color: #6FB8EF;
@@ -17392,20 +17384,33 @@ footer .container {
 .question--checkbox [type=checkbox]:checked + span {
   color: var(--md-sys-color-primary);
 }
-.question--checkbox--dark * {
+.question--dark * {
   color: #fff;
   border-color: #fff;
 }
-.question--checkbox--dark * [type=radio]:not(:checked) + span:before,
-.question--checkbox--dark * [type=radio]:not(:checked) + span:after {
+.question--dark * [type=radio]:not(:checked) + span:before,
+.question--dark * [type=radio]:not(:checked) + span:after {
   border-color: #fff;
 }
-.question--checkbox--dark * [type=radio]:checked + span {
+.question--dark * [type=radio]:checked + span {
   color: var(--quaternary-color);
 }
-.question--checkbox--dark * [type=radio]:checked + span:before,
-.question--checkbox--dark * [type=radio]:checked + span:after {
-  background-color: var(--quaternary-color);
+.question--dark * [type=radio]:checked + span:before,
+.question--dark * [type=radio]:checked + span:after {
+  border-right: 2px solid var(--quaternary-color);
+  border-bottom: 2px solid var(--quaternary-color);
+}
+.question--dark * [type=checkbox]:not(:checked) + span:before,
+.question--dark * [type=checkbox]:not(:checked) + span:after {
+  border-color: #fff;
+}
+.question--dark * [type=checkbox]:checked + span {
+  color: var(--quaternary-color);
+}
+.question--dark * [type=checkbox]:checked + span:before,
+.question--dark * [type=checkbox]:checked + span:after {
+  border-right: 2px solid var(--quaternary-color);
+  border-bottom: 2px solid var(--quaternary-color);
 }
 
 .question-result {
@@ -17824,17 +17829,9 @@ footer .container {
   aspect-ratio: 1/1;
   border-radius: 50%;
   width: 100%;
-  max-width: 180px;
   min-width: 40px;
-}
-.img-circle--25 {
-  max-width: 45px !important;
-}
-.img-circle--50 {
-  max-width: 90px !important;
-}
-.img-circle--75 {
-  max-width: 135px !important;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .img-rounded {
@@ -17893,8 +17890,8 @@ u {
 
 .btn, .btn-large, .btn-small {
   border-radius: 9px;
-  background-color: var(--quaternary-color) !important;
-  color: var(--md-sys-color-on-primary);
+  background-color: #5758e3;
+  color: #ffffff;
 }
 .btn-large {
   border-radius: 9px;
@@ -17904,15 +17901,27 @@ u {
 .btn.filled,
 .filled.btn-small,
 .filled.btn-large {
-  color: var(--md-ref-palette-primary50);
+  color: var(--primary-color);
   background-color: var(--quaternary-color);
 }
 
 .btn.filled:hover,
 .filled.btn-small:hover,
 .filled.btn-large:hover {
-  color: var(--md-ref-palette-primary50);
+  background-color: var(--quaternary-color);
   filter: brightness(0.95);
+}
+
+.btn.filled:focus,
+.filled.btn-small:focus,
+.filled.btn-large:focus {
+  background-color: var(--quaternary-color);
+  filter: brightness(0.8);
+}
+
+#finishButton {
+  background-color: #5758e3;
+  color: #ffffff;
 }
 
 .full-rounded {
