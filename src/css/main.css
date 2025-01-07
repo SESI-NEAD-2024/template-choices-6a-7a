@@ -12811,7 +12811,7 @@ h6 {
 
 @media only screen and (max-width : 600.99px) {
   .display1 {
-    font-size: 3.875rem;
+    font-size: 2.2rem;
   }
   h1 {
     font-size: 3rem;
@@ -16940,7 +16940,7 @@ nav .progress {
   }
 }
 
-.box-attention, .full-img .full-img__legend {
+.box-attention {
   border-radius: 23px;
   padding: 0px 50px;
   border: 2px solid rgba(87, 88, 227, 0.15);
@@ -17009,12 +17009,12 @@ nav .progress {
   background-color: rgba(0, 0, 0, 0.5019607843) !important;
 }
 @media only screen and (max-width : 992.99px) {
-  .box-attention, .full-img .full-img__legend {
+  .box-attention {
     padding: 18px 24px;
   }
 }
 @media only screen and (max-width : 600.99px) {
-  .box-attention, .full-img .full-img__legend {
+  .box-attention {
     padding: 16px 16px;
   }
 }
@@ -17223,7 +17223,7 @@ nav .progress {
   color: #3d4d58;
   border-radius: 20px;
 }
-.carousel-label .box-attention, .carousel-label .full-img .full-img__legend, .full-img .carousel-label .full-img__legend {
+.carousel-label .box-attention {
   border-radius: 10px;
 }
 .carousel-label .carousel-fixed-item {
@@ -17360,9 +17360,8 @@ footer .container {
   border-radius: 23px 23px 0 0;
   height: 550px;
 }
-.full-img .full-img__legend {
+.full-img .box-attention {
   border-radius: 23px 23px 0 0;
-  background-color: #fff;
 }
 @media only screen and (max-width : 600.99px) {
   .full-img {
@@ -17746,7 +17745,7 @@ footer .container {
 }
 
 .dark-gray-light-bg {
-  background-image: linear-gradient(to right, #3d4d58 0, #6c7981 100%);
+  background-image: linear-gradient(to right, #3d4d58 0, #6c7981 100%) !important;
 }
 
 .bg-azul {
@@ -17993,6 +17992,10 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.4s ease 0s;
   cursor: pointer;
   animation: pulse 1s infinite;
+}
+
+.full-img {
+  background-image: url("../img/gif-11.webp");
 }
 
 #house {
