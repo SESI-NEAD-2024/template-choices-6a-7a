@@ -3,6 +3,9 @@
   display: flex;
   align-items: center;
 
+  img{
+    width: 50%;
+  }
 
   .card {
     z-index: 2;
@@ -10,7 +13,7 @@
 
     
     padding-left: 20px;
-    width: 55%;
+    width: 50%;
     border-radius: 0 $border-radius-lg $border-radius-lg 0;
     .card-content{
       padding-top: 32px;
@@ -19,8 +22,13 @@
   }
   @include tablet {
     flex-direction: column;
+    
    
+    img{
+      width: 100%;
+    }
     .card {
+      
       width: 100%;
       border-radius: $border-radius-lg;
     }
