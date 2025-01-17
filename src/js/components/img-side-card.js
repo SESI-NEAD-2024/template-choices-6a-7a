@@ -15,7 +15,7 @@ export default {
       loading="lazy"
     />
 
-    <div  :class="[card_class]" class="card card--purple-shadow mt-24-mobile" >
+    <div  :class="[card_class]" class="card card--purple-shadow" >
       <div class="card-content">
         <slot></slot>
       </div>
