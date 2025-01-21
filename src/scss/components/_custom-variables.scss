@@ -11,10 +11,10 @@ $display1-fontsize: 4.875rem; // 72px
 $h1-fontsize: 3.75rem; // 48px
 $h2-fontsize: 3.125rem; // 36px
 $h3-fontsize: 2.125rem; // 32px
-$h4-fontsize: 1.85rem; // 24px
 $h5-fontsize: 1.64rem; // 20px
 $h6-fontsize: 1.15rem; // 22px
 $body1-fontsize: 1.5rem; // 24px
+$h4-fontsize: $body1-fontsize; // 24px
 $body2-fontsize: 1.125rem; // 18px
 $body3-fontsize: 0.875rem; // 14px
 $default-fontsize: 1rem;
