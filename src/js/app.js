@@ -17,6 +17,7 @@ import QuestionRadio from "./components/question-radio.js";
 import QuestionCheckbox from "./components/question-checkbox.js";
 import QuestionInOrder from "./components/question-in-order.js";
 import QuestionMatriz from "./components/question-matriz.js";
+import Divisor from "./components/divisor.js";
 
 const app = createApp({
   components: {
@@ -32,6 +33,7 @@ const app = createApp({
     QuestionCheckbox,
     QuestionInOrder,
     QuestionMatriz,
+    Divisor
   },
 
   // Quando o componente estiver montado, executa o código

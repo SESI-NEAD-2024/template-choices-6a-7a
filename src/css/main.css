@@ -17679,6 +17679,21 @@ footer .container {
   width: 100%;
 }
 
+.divisor {
+  line-height: 0;
+}
+.divisor img {
+  width: 100%;
+}
+.divisor--mbot {
+  margin-top: -3px;
+  margin-bottom: 80px;
+}
+.divisor--mtop {
+  margin-bottom: -3px;
+  margin-top: 80px;
+}
+
 .container {
   max-width: 1180px;
   width: 90%;
