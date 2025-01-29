@@ -17,6 +17,7 @@ import QuestionRadio from "./components/question-radio.js";
 import QuestionCheckbox from "./components/question-checkbox.js";
 import QuestionInOrder from "./components/question-in-order.js";
 import QuestionMatriz from "./components/question-matriz.js";
+import CollapsibleSolo from "./components/collapsible-solo.js";
 import Divisor from "./components/divisor.js";
 
 const app = createApp({
@@ -33,6 +34,7 @@ const app = createApp({
     QuestionCheckbox,
     QuestionInOrder,
     QuestionMatriz,
+    CollapsibleSolo,
     Divisor
   },
 
