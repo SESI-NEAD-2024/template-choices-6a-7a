@@ -17,8 +17,8 @@ export default {
       items: [
         {
           id: 1,
-          img: "src/img/aula/epa-01.webp",
-          alt: "EPA",
+          img: "src/img/core/placeholder.png",
+          alt: "Choices",
 
           
           html://html 
@@ -30,8 +30,8 @@ export default {
         },
         {
           id: 2,
-          img: "src/img/aula/epa-02.webp",
-          alt: "EPA",
+          img: "src/img/core/placeholder.png",
+          alt: "Choices",
 
           
           html://html 
@@ -44,8 +44,8 @@ export default {
         },
         {
           id: 3,
-          img: "src/img/aula/epa-03.webp",
-          alt: "EPA",
+          img: "src/img/core/placeholder.png",
+          alt: "Choices",
 
           
           html://html 
@@ -62,8 +62,8 @@ export default {
         },
         {
           id: 4,
-          img: "src/img/aula/epa-04.webp",
-          alt: "EPA",
+          img: "src/img/core/placeholder.png",
+          alt: "Choices",
 
           
           html://html 

@@ -18,8 +18,8 @@ export default {
         items: [
           {
             id: 1,
-            img: "./src/img/carousel-01.webp",
-            alt: "Dicção",
+            img: "src/img/core/placeholder.png",
+            alt: "Choices",
   
             
             html://html 
@@ -31,8 +31,8 @@ export default {
           },
           {
             id: 2,
-            img: "./src/img/carousel-02.webp",
-            alt: "Expressão Corporal",
+            img: "src/img/core/placeholder.png",
+            alt: "Choices",
   
             
             html://html 
@@ -44,8 +44,8 @@ export default {
           },
           {
             id: 3,
-            img: "./src/img/carousel-03.webp",
-            alt: "Capacidade de Improviso",
+            img: "src/img/core/placeholder.png",
+            alt: "Choices",
   
             
             html://html 
@@ -58,8 +58,8 @@ export default {
           },
           {
             id: 4,
-            img: "./src/img/carousel-04.webp",
-            alt: "Entender o público que está ouvindo a história",
+            img: "src/img/core/placeholder.png",
+            alt: "Choices",
   
             
             html://html 

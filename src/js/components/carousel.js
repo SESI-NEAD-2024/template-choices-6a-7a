@@ -4,8 +4,8 @@ export default {
       items: [
         {
           id: 1,
-          img: "src/img/mercurio.png",
-          alt: "Mercúrio",
+          img: "src/img/core/placeholder.png",
+          alt: "Choices",
 
           //html
           html: `
@@ -23,8 +23,8 @@ export default {
         },
         {
           id: 2,
-          img: "src/img/venus.png",
-          alt: "Vênus",
+          img: "src/img/core/placeholder.png",
+          alt: "Choices",
 
           //html
           html: `
@@ -40,8 +40,8 @@ export default {
         },
         {
           id: 3,
-          img: "src/img/terra.png",
-          alt: "Terra",
+          img: "src/img/core/placeholder.png",
+          alt: "Choices",
 
           //html
           html: `
