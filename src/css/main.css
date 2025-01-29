@@ -17710,6 +17710,10 @@ footer .container {
   width: 90%;
 }
 
+.default-text {
+  color: #3d4d58 !important;
+}
+
 .purple-text {
   color: #5758e3 !important;
 }
