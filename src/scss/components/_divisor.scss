@@ -1,17 +1,22 @@
 // Divisores ------------------------------------
 
 .divisor {
-    line-height: 0;
-    img{
-      width: 100%;
-    }
-    &--mbot {
-      margin-top: -3px;
-      margin-bottom: 80px;
-    }
-  
-    &--mtop {
-      margin-bottom: -3px;
-      margin-top: 80px;
+  line-height: 0;
+  overflow: hidden;
+  img{
+    width: 100%;
+    @include tablet{
+      width: auto;
     }
   }
+  &--mbot {
+    margin-top: -3px;
+    margin-bottom: 80px;
+  }
+
+  &--mtop {
+    margin-bottom: -3px;
+    margin-top: 80px;
+  }
+
+}
