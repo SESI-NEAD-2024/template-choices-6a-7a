@@ -3,20 +3,20 @@
 .divisor {
   line-height: 0;
   overflow: hidden;
-  img{
+  img {
     width: 100%;
-    @include tablet{
+    @include tablet {
       width: auto;
     }
   }
   &--mbot {
-    margin-top: -3px;
     margin-bottom: 80px;
   }
 
   &--mtop {
-    margin-bottom: -3px;
     margin-top: 80px;
+    img {
+      margin-bottom: -3px;
+    }
   }
-
 }
