@@ -1,10 +1,13 @@
-![versão](https://img.shields.io/static/v1?label=versão&message=v4v&color=%23f44336)
+![versão](https://img.shields.io/static/v1?label=versão&message=v4.0.1&color=%23f44336)
 
 # Projeto de aula SCORM
+
 Use os arquivos para desenvolvimento e no final gere a build para fazer upload no LMS.
 
 ## ✨ Exemplo
+
 ![Exemplo de diretórios ao buildar](docs/exemplo.png)
+
 - O ZIP é o pacote SCORM para ser usado no LMS.
 - A pasta scorm_open são os arquivos que compõe o pacote SCORM antes do zip.
 
@@ -16,7 +19,6 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - Npm instalado
 - Gulp instalado
 
-
 ## 🚀 Instalando na sua máquina
 
 Para instalar, siga estas etapas na raíz do projeto:
@@ -24,10 +26,12 @@ Para instalar, siga estas etapas na raíz do projeto:
 ```
 npm install
 ```
-Havendo o arquivo *package.json*, as dependências serão instaladas corretamente deixando o projeto pronto para fazer a build.
+
+Havendo o arquivo _package.json_, as dependências serão instaladas corretamente deixando o projeto pronto para fazer a build.
 
 ## ☕ Gerando Build e pacote scorm
-Gera a pasta *dist* e dentro, estará o pacote SCORM zipado para upload no LMS.
+
+Gera a pasta _dist_ e dentro, estará o pacote SCORM zipado para upload no LMS.
 Na raíz do projeto:
 
 ```
@@ -62,4 +66,3 @@ gulp watch
     </td>
   </tr>
 </table>
-
