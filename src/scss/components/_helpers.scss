@@ -4,7 +4,7 @@
 .container {
   max-width: 1180px;
   width: 90%;
-  &--980{
+  &--980 {
     margin: 0 auto;
     max-width: 980px;
     width: 90%;
@@ -23,7 +23,7 @@
 
 // Cor texto ------------------------------------
 
-.default-text{
+.default-text {
   color: $text-color !important;
 }
 
@@ -62,7 +62,6 @@
   display: inline-flex;
 }
 
-
 // Gradiente Fundo ------------------------------------
 
 .purple-blue-bg {
@@ -78,7 +77,11 @@
   background-image: linear-gradient(to right, #5758e3 10%, #ff624a 90%);
 }
 .dark-gray-light-bg {
-  background-image: linear-gradient(to right, #3d4d58 0, #6c7981 100%) !important;
+  background-image: linear-gradient(
+    to right,
+    #3d4d58 0,
+    #6c7981 100%
+  ) !important;
 }
 
 // Cor Fundo ------------------------------------
@@ -105,16 +108,13 @@
   background-color: var(--primary-color);
 }
 
-
-
-
 // Flex Box ALinhamento ------------------------------------
 
 .flex--column {
   flex-direction: column;
   display: flex;
 }
-.flex--column-mobile{
+.flex--column-mobile {
   @include mobile {
     flex-direction: column;
     display: flex;
@@ -131,7 +131,7 @@
   display: flex;
 }
 
-.flex--align-center-mobile  {
+.flex--align-center-mobile {
   @include mobile {
     align-items: center;
     display: flex;
@@ -143,7 +143,7 @@
   display: flex;
 }
 
-.flex--justify-center-mobile{
+.flex--justify-center-mobile {
   @include mobile {
     justify-content: center;
     display: flex;
@@ -160,9 +160,7 @@
   align-items: end;
 }
 
-
 // IMG ------------------------------------
-
 
 .img-circle {
   aspect-ratio: 1 / 1;
@@ -173,7 +171,6 @@
   object-position: center center;
 }
 
-
 .img-rounded {
   border-radius: 23px;
 }
@@ -183,23 +180,25 @@
   object-position: center center;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   animation: pulse 1s infinite;
+  overflow: hidden;
 }
+
 @keyframes pulse {
-    0% {
-      //	transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    }
-  
-    70% {
-      //	transform: scale(1);
-      box-shadow: 0 0 0 12px rgba(0, 0, 0, 0);
-    }
-  
-    100% {
-      //	transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
+  0% {
+    //	transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
   }
+
+  70% {
+    //	transform: scale(1);
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    //	transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
 
 .flip {
   -moz-transform: scaleX(-1);

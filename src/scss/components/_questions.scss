@@ -19,7 +19,6 @@
     [type="checkbox"]:checked + span {
       color: var(--md-sys-color-primary);
     }
-
   }
 
   &--dark * {
@@ -35,7 +34,7 @@
     [type="radio"]:checked + span:before,
     [type="radio"]:checked + span:after {
       border-right: 2px solid var(--quaternary-color);
-    border-bottom: 2px solid var(--quaternary-color);
+      border-bottom: 2px solid var(--quaternary-color);
     }
 
     [type="checkbox"]:not(:checked) + span:before,
@@ -48,7 +47,7 @@
     [type="checkbox"]:checked + span:before,
     [type="checkbox"]:checked + span:after {
       border-right: 2px solid var(--quaternary-color);
-    border-bottom: 2px solid var(--quaternary-color);
+      border-bottom: 2px solid var(--quaternary-color);
     }
   }
 }
@@ -59,7 +58,7 @@
   align-items: center;
   padding: 0 16px;
   color: #fff;
-  p{
+  p {
     font-size: 16px;
   }
   img {
@@ -72,11 +71,11 @@
   }
   &__correto {
     background-color: #46d86f;
-    color: #3D4D58;
+    color: #3d4d58;
   }
   &__incorreto {
     background-color: #ef4a4a;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
