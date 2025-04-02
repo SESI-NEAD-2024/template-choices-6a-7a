@@ -8,10 +8,13 @@
  * Criado originalmente: Péricles Christian
  *******************************************************************************/
 
-const DEBUG = false;
-
 // Pega API
-var scormAPI = getAPIHandle();
+// Variáveis de controle
+const DEV = false; // Para DESENVOLVIMENTO apenas, para não ficar dando alert caso não encontre a API. Se for true, não vai chamar a API
+const DEBUG = false; // Para mostrar mensagens de debug no console que eu personalizei e coloquei em lugares estratégicos desse arquivo
+
+// Pega API do SCORM
+var scormAPI = !DEV ? getAPIHandle() : null;
 
 const LESSON_STATUS = {
   notAttempted: "not attempted",
@@ -157,10 +160,10 @@ function saveSuspendData(value) {
 }
 
 /**
-* Registra os eventos de clique para finalizar o curso.
-* Desabilita o botão de finalizar se o tópico já estiver concluído e
-* adiciona um ouvinte de evento a ele para salvar os dados de suspensão, finalizar o tópico,
-* redefine a animação do botão e adiciona a animação ao botão.
+ * Registra os eventos de clique para finalizar o curso.
+ * Desabilita o botão de finalizar se o tópico já estiver concluído e
+ * adiciona um ouvinte de evento a ele para salvar os dados de suspensão, finalizar o tópico,
+ * redefine a animação do botão e adiciona a animação ao botão.
  */
 function finishButton() {
   // Registra os eventos de clique para concluir o curso
@@ -169,7 +172,8 @@ function finishButton() {
   if (topicIsFinished == LESSON_STATUS.completed) {
     buttonFinish.disabled = true;
     buttonFinish.classList.add("disabled");
-    buttonFinish.innerHTML = 'Concluído <span class="ml-1 pb-1 material-symbols-rounded"> check </span>';
+    buttonFinish.innerHTML =
+      'Concluído <span class="ml-1 pb-1 material-symbols-rounded"> check </span>';
   }
 
   if (buttonFinish) {

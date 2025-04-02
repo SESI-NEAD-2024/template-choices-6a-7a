@@ -18014,3 +18014,17 @@ body::-webkit-scrollbar-thumb {
   border-radius: 13px;
   padding: 1%;
 }
+
+.img-section {
+  background-image: url("../img/core/placeholder.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.full-img {
+  background-image: url("../img/core/placeholder.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
