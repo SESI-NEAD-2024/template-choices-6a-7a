@@ -2,7 +2,6 @@
 
 // MY COMPONENTS ------------------------------------
 
-
 @import "components/_navbar.scss";
 
 @import "components/_sidenav.scss";
@@ -63,7 +62,6 @@ u {
   text-decoration: none;
 }
 
-
 .btn {
   &-large {
     border-radius: 9px;
@@ -83,7 +81,6 @@ u {
 .btn.filled:hover,
 .filled.btn-small:hover,
 .filled.btn-large:hover {
-
   background-color: var(--quaternary-color);
   filter: brightness(0.95);
 }
@@ -95,7 +92,7 @@ u {
   filter: brightness(0.8);
 }
 
-#finishButton{
+#finishButton {
   background-color: $bgColor;
   color: $fontColor;
 }
@@ -152,10 +149,11 @@ body::-webkit-scrollbar-thumb {
   background-color: #000000de !important;
   border-radius: 13px;
   padding: 1%;
+  font-family: $font-stack;
+}
+.pointer {
+  cursor: pointer;
 }
 
 // Tratamento Aula específica
 @import "page";
-
-
-

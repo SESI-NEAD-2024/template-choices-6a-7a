@@ -1,4 +1,4 @@
-![versão](https://img.shields.io/static/v1?label=versão&message=v4.0.1&color=%23f44336)
+![versão](https://img.shields.io/static/v1?label=versão&message=v4.0.2&color=%23f44336)
 
 # Projeto de aula SCORM
 

@@ -17811,6 +17811,14 @@ footer .container {
   background-color: var(--primary-color);
 }
 
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
 .flex--column {
   flex-direction: column;
   display: flex;
@@ -17862,6 +17870,20 @@ footer .container {
   align-items: end;
 }
 
+@media only screen and (max-width : 600.99px) {
+  .order-1-mobile {
+    order: 1;
+  }
+  .order-2-mobile {
+    order: 2;
+  }
+  .order-3-mobile {
+    order: 3;
+  }
+  .order-4-mobile {
+    order: 4;
+  }
+}
 .img-circle {
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -18013,6 +18035,11 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.8705882353) !important;
   border-radius: 13px;
   padding: 1%;
+  font-family: gamay-editorial, "Roboto", "Helvetica Neue", sans-serif;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .img-section {

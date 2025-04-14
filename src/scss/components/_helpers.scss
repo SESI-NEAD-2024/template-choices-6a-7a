@@ -108,8 +108,14 @@
   background-color: var(--primary-color);
 }
 
+// Display block ------------------------------------
+.block {
+  display: block;
+}
 // Flex Box ALinhamento ------------------------------------
-
+.flex {
+  display: flex;
+}
 .flex--column {
   flex-direction: column;
   display: flex;
@@ -158,6 +164,21 @@
 .flex--align-end {
   display: flex;
   align-items: end;
+}
+
+@include mobile {
+  .order-1-mobile {
+    order: 1;
+  }
+  .order-2-mobile {
+    order: 2;
+  }
+  .order-3-mobile {
+    order: 3;
+  }
+  .order-4-mobile {
+    order: 4;
+  }
 }
 
 // IMG ------------------------------------
